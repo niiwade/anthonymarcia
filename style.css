@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 @font-face {
   src: url('./fonts/ppneue.woff2') format('woff2');
   font-family: 'PPNeue';
@@ -69,9 +71,17 @@ a {
   padding: 1.6rem 3.2rem;
 }
 
+a:hover {
+  color: #c27e01;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  align-items: center;
 }
 
 .intro {
