@@ -189,11 +189,11 @@ a {
 
 .intro__line {
   height: 3px;
-  width: 61.5%;
+  width: 62.5%;
   background-color: white;
   position: absolute;
-  bottom: 2rem;
+  bottom: 8rem;
   left: 35%;
   z-index: 3;
-  opacity: 0;
+  opacity: 90;
 }
