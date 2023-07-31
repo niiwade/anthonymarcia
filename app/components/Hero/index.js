@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import Countdown from "@/components/Countdown";
 import Image from "next/image";
-import Story from "../Story";
 
 import styles from "./Hero.module.scss";
 import { animateTitle, animateImage, revealMenu } from "./animations";
@@ -29,43 +29,44 @@ const Hero = () => {
         {/* <div data-menu-item data-hidden>
           <Logo />
         </div> */}
-        <Link data-menu-item data-hidden href="/our-story">
+        <Link
+          data-menu-item
+          data-hidden
+          href="/our-story"
+          className={styles.hero_text}
+        >
           Our Story
         </Link>
 
-        <Link href="/order">
+        <Link href="/order"  className={styles.hero_text}>
           <span data-menu-item data-hidden>
             Order of Service
           </span>
         </Link>
 
-        <Link href="/gallery">
+        <Link href="/gallery"  className={styles.hero_text}>
           <span data-menu-item data-hidden>
             Gallery
           </span>
         </Link>
       </div>
 
-      <h1 className={styles.hero__title}>
-        <span data-hidden data-title-first>
-          Its
-        </span>
-        <span data-hero-line className={styles.hero__line}></span>
-        <span data-hidden data-title-last>
-          Our Wedding
-        </span>
-      </h1>
-
       <div className={styles.hero__image}>
         <div data-image-overlay className={styles.hero__imageOverlay}></div>
         <Image
           data-image
-          src="/images/photo_main.gif"
-          width={1728}
-          height={650}
+          src="/images/am.jpg"
+          layout="fill" // This makes the image take up the whole parent container (hero__image)
+          objectFit="cover"
           alt="Blob"
-          style={{ objectFit: "cover" }}
         />
+      </div>
+
+      <div className={styles.hero__title}>
+        <span data-hidden data-title-first>
+          Its Our Wedding
+        </span>
+        <Countdown />
       </div>
     </section>
   );

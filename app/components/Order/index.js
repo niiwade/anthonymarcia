@@ -30,44 +30,60 @@ const HorizontalTimeline = () => {
           <p className="indent">Engagement</p>
         </div>
         <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Wedding</p>
+          <p>Saturday, August 26th | 7:00 PM Topgolf</p>
+          <p className="indent">Wedding Procession</p>
         </div>
         <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Exchange of Vows</p>
-        </div>
-
-        <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Kiss the Bride</p>
-        </div>
-        <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Kiss the Bride</p>
+          <p>Saturday, August 26th | 7:00 PM Topgolf</p>
+          <p className="indent">Words of Welcome</p>
         </div>
 
         <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Kiss the Bride</p>
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Introduction</p>
+        </div>
+        <div className="content">
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Readings</p>
         </div>
 
         <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Kiss the Bride</p>
-        </div>
-        <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Kiss the Bride</p>
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Officiant Addresses Couple</p>
         </div>
 
         <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Kiss the Bride</p>
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent"> Exchange Vows</p>
         </div>
         <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Kiss the Bride</p>
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Ring Exchange</p>
+        </div>
+
+        <div className="content">
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">The Kiss</p>
+        </div>
+        <div className="content">
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Photo List</p>
+        </div>
+        <div className="content">
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Reception</p>
+        </div>
+        <div className="content">
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Cake Cutting</p>
+        </div>
+        <div className="content">
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">First Dance</p>
+        </div>
+        <div className="content">
+          <p>Saturday, August 26th | 7:00 PM </p>
+          <p className="indent">Closing Remarks</p>
         </div>
       </div>
     </div>
