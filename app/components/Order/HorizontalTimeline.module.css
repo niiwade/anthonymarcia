@@ -252,3 +252,9 @@
     /* Add your arrow styles here */
   }
   
+  @media screen and (max-width: 600px) {
+    .content {
+      max-width: 90%; /* Reduce the timeline's width on small screens */
+    }
+  }
+  

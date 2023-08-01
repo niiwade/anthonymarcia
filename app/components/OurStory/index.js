@@ -46,11 +46,6 @@ const Story = () => {
               friends for about a year before making it official.
             </p>
             <p className={styles["content__text"]}>
-              We met during our college years at UNC! We shared a class together
-              and started studying at the library almost every week. We were
-              friends for about a year before making it official.
-            </p>
-            <p className={styles["content__text"]}>
               We have now been together for 5 years, have traveled to 10
               countries together, and are so excited for this next chapter of
               our lives.

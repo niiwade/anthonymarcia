@@ -8,20 +8,23 @@ const HorizontalTimeline = () => {
     <div className="wrapper">
       <div className="left-container">
         <h1 className="heading">Order of Service</h1>
-        <Link href="/" class="separator"> Home</Link>
-   
+        <Link href="/" class="separator">
+          {" "}
+          Home
+        </Link>
       </div>
       <div className="right-container">
         {/* <div className="meta">
-    <p>
-    <span>Lacus -</span>
-    <span>Ultricies posuere</span>
-    </p>
-    <p>
-    <span>Nunc -</span>
-    <span>Erat varius</span>
-    </p>
-  </div> */}
+          <p>
+            <span>Lacus -</span>
+            <span>Ultricies posuere</span>
+          </p>
+          <p>
+            <span>Nunc -</span>
+            <span>Erat varius</span>
+          </p>
+        </div> */}
+
         <div className="featured-image">
           <img src="/images/am.jpg" alt="" />
         </div>
