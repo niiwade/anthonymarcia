@@ -31,7 +31,9 @@ const Countdown = () => {
     <div className={styles.countdown}>
       {timeRemaining.days} days {timeRemaining.hours} hours{" "}
       {timeRemaining.minutes} minutes {timeRemaining.seconds} seconds
+      
     </div>
+    
   );
 };
 
