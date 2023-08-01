@@ -21,15 +21,12 @@
     text-decoration: none;
   }
 
-  &_text{
-    text-decoration:none;
+  &_text {
+    text-decoration: none;
     font-size: 2.5rem;
     padding: 2px;
     color: black;
-  
   }
-
- 
 
   &__image {
     position: relative; // Relative positioning to hold the image
@@ -45,5 +42,12 @@
     background-color: black;
     transform: scaleY(0.31);
     transform-origin: bottom center;
+  }
+
+  @media (max-width: 767px) {
+    // Remove existing font-size setting for mobile
+    &_text {
+      font-size: unset;
+    }
   }
 }

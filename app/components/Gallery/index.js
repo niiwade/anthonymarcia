@@ -1,7 +1,7 @@
+"use client";
+
 // components/Slideshow.js
 
-"use client";
-// components/Slideshow.js
 import React, { useState, useEffect } from "react";
 import styles from "./Slideshow.module.scss";
 import Link from "next/link";
@@ -35,13 +35,9 @@ const Slideshow = ({ images }) => {
         {images.map((imageUrl, i) => (
           <figure
             key={i}
-            className={styles["figure"]}
+            className={`${styles["figure"]} ${styles[`pic-${i + 1}`]}`}
             style={{
               backgroundImage: `url(${imageUrl})`,
-              animationDelay: `${i * 6}s`,
-              OAnimationDelay: `${i * 6}s`,
-              MozAnimationDelay: `${i * 6}s`,
-              WebkitAnimationDelay: `${i * 6}s`,
               opacity: currentSlide === i ? 1 : 0, // Show only the current slide
             }}
           ></figure>

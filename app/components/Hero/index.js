@@ -26,9 +26,6 @@ const Hero = () => {
   return (
     <section className={styles.hero} ref={heroRef}>
       <div className={styles.hero__top}>
-        {/* <div data-menu-item data-hidden>
-          <Logo />
-        </div> */}
         <Link
           data-menu-item
           data-hidden
@@ -38,13 +35,13 @@ const Hero = () => {
           Our Story
         </Link>
 
-        <Link href="/order"  className={styles.hero_text}>
+        <Link href="/order" className={styles.hero_text}>
           <span data-menu-item data-hidden>
             Order of Service
           </span>
         </Link>
 
-        <Link href="/gallery"  className={styles.hero_text}>
+        <Link href="/gallery" className={styles.hero_text}>
           <span data-menu-item data-hidden>
             Gallery
           </span>

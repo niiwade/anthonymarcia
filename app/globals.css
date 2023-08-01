@@ -57,6 +57,19 @@ $serif: "Lora", serif;
   padding: 10% 5%;
 }
 
+@media (max-width: 767px) {
+  .left-container,
+  .right-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .wrapper {
     display: flex;
