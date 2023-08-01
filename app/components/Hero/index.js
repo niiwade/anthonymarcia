@@ -12,7 +12,6 @@ import Logo from "@/components/Logo";
 const Hero = () => {
   const timeline = useRef(gsap.timeline());
   const heroRef = useRef(null);
-  
 
   useEffect(() => {
     const context = gsap.context(() => {
@@ -26,35 +25,35 @@ const Hero = () => {
 
   return (
     <section className={styles.hero} ref={heroRef}>
-        <div className={styles.hero__top}>
-          <Link
-            data-menu-item
-            data-hidden
-            href="/our-story"
-            className={styles.hero_text}
-          >
-            Our Story
-          </Link>
+      <div className={styles.hero__top}>
+        <Link
+          data-menu-item
+          data-hidden
+          href="/our-story"
+          className={styles.hero_text}
+        >
+          Our Story
+        </Link>
 
-          <Link href="/order"  className={styles.hero_text}>
-            <span data-menu-item data-hidden>
-              Order of Service
-            </span>
-          </Link>
+        <Link href="/order" className={styles.hero_text}>
+          <span data-menu-item data-hidden>
+            Order of Service
+          </span>
+        </Link>
 
-          <Link href="/gallery"  className={styles.hero_text}>
-            <span data-menu-item data-hidden>
-              Gallery
-            </span>
-          </Link>
-        </div>
+        <Link href="/gallery" className={styles.hero_text}>
+          <span data-menu-item data-hidden>
+            Gallery
+          </span>
+        </Link>
+      </div>
 
-        <div className={styles.hero__title}>
+      <hr></hr>
+      <div className={styles.hero__title}>
         <span data-hidden data-title-first>
           Its Our Wedding
         </span>
         <Countdown />
-        
       </div>
 
       <div className={styles.hero__image}>
@@ -67,8 +66,6 @@ const Hero = () => {
           alt="Blob"
         />
       </div>
-
-     
     </section>
   );
 };

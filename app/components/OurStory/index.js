@@ -8,8 +8,8 @@ const Story = () => {
   return (
     <div className={styles.container}>
       <header>
-        <nav className={styles.nav}>
-          <ul className={styles.nav__list}>
+        <h1 className={styles["page-title"]}>Our Story</h1>
+        <ul className={styles.nav__list}>
             <li>
               <Link
                 className={`${styles.nav__link} ${styles["nav__link--active"]}`}
@@ -19,9 +19,6 @@ const Story = () => {
               </Link>
             </li>
           </ul>
-          <span className={styles.nav__copy}>26th August 2023 </span>
-        </nav>
-        <h1 className={styles["page-title"]}>Our Story</h1>
         <div className="featured-image">
           <img src="/images/am.jpg" alt="" />
         </div>

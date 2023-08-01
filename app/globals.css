@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 *,
 *:before,
 *:after {
@@ -93,7 +95,8 @@ $serif: "Lora", serif;
 }
 
 .heading {
-  font-size: 3.5em;
+  font-size: 1.5em;
+  font-family: 'Dancing Script', cursive;
   font-weight: normal;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -103,9 +106,9 @@ $serif: "Lora", serif;
 .separator {
   display: block;
   font-size: 1.3em;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .intro {

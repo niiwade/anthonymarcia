@@ -21,7 +21,7 @@ $screen-xsm: 370px;
 }
 
 .body {
-  min-height: 100vh;
+  min-height: 100vh; // Set the minimum height to fill the viewport
   font-family: $font-copy;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -31,10 +31,10 @@ $screen-xsm: 370px;
 }
 
 .container {
-  max-width: 120rem;
-
-  margin: 0 auto;
-  padding: 0 6rem 6rem 6rem;
+  max-width: 100vw; // Set the maximum width to fill the viewport
+  margin: 0; // Remove any default margins
+  padding: 0; // Remove any default paddings
+  padding: 0 6rem; // Add padding as needed
 }
 
 .nav {
@@ -88,38 +88,24 @@ $screen-xsm: 370px;
 }
 
 .page-title {
-  margin-bottom: 8rem;
-  font-family: $font-title;
+  // ... (previous styles)
   font-size: 16rem;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: -0.4px;
   line-height: 16rem;
   color: black;
-
-  @include respond($screen-md) {
-    margin-bottom: 6rem;
-    font-size: 8rem;
-  }
-
-  @include respond($screen-sm) {
-    margin-bottom: 4rem;
-    font-size: 7rem;
-  }
-
-  @include respond($screen-xsm) {
-    margin-bottom: 0;
-    font-size: 5rem;
-  }
+  margin-bottom: 8rem;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #155e5d;
-  color: white;
+  // background-color: #155e5d;
+  color: black;
 
+  &__text {
+    font-size: 15px;
+    line-height: 2;
+  }
 
   @include respond($screen-md) {
     flex-direction: column;
@@ -140,7 +126,7 @@ $screen-xsm: 370px;
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
   }
 
@@ -171,7 +157,7 @@ $screen-xsm: 370px;
   }
 
   &__text {
-    width: 320px;
+    width: px;
 
     @include respond($screen-sm) {
       width: 100%;
@@ -182,15 +168,27 @@ $screen-xsm: 370px;
 .content1 {
   display: flex;
   justify-content: space-between;
+  line-height: 5;
   align-items: flex-start;
-  background-color:  #155e5d;
-  color: white;
-
+  // background-color: #155e5d;
+  color: black;
 
   @include respond($screen-md) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+  }
+
+  &__text {
+    width: 320px;
+
+    @include respond($screen-sm) {
+      width: 100%;
+    }
+
+    @include respond($screen-sm) {
+      font-size: 5rem; /* Adjust font size for small screens */
+    }
   }
 
   &__descriptor {

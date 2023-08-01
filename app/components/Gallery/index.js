@@ -1,3 +1,5 @@
+// components/Slideshow.js
+
 "use client";
 
 // components/Slideshow.js
@@ -35,7 +37,7 @@ const Slideshow = ({ images }) => {
         {images.map((imageUrl, i) => (
           <figure
             key={i}
-            className={`${styles["figure"]} ${styles[`pic-${i + 1}`]}`}
+            className={styles["figure"]}
             style={{
               backgroundImage: `url(${imageUrl})`,
               opacity: currentSlide === i ? 1 : 0, // Show only the current slide

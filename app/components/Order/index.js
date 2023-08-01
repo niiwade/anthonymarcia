@@ -7,11 +7,13 @@ const HorizontalTimeline = () => {
   return (
     <div className="wrapper">
       <div className="left-container">
-        <h1 className="heading">Order of Service</h1>
-        <Link href="/" class="separator">
+      <h1 className="heading">Order of Service</h1>
+
+      <Link href="/" class="separator">
           {" "}
           Home
         </Link>
+        
       </div>
       <div className="right-container">
         {/* <div className="meta">
