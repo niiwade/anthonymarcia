@@ -117,6 +117,9 @@ $screen-xsm: 370px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  background-color: #155e5d;
+  color: white;
+
 
   @include respond($screen-md) {
     flex-direction: column;
@@ -177,66 +180,67 @@ $screen-xsm: 370px;
 }
 
 .content1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: aquamarine;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color:  #155e5d;
+  color: white;
+
+
+  @include respond($screen-md) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  &__descriptor {
+    width: 14%;
+    border-top: 1px solid $color-gray;
+    padding-top: 4rem;
+
     @include respond($screen-md) {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: stretch;
-    }
-  
-    &__descriptor {
-      width: 14%;
-      border-top: 1px solid $color-gray;
-      padding-top: 4rem;
-  
-      @include respond($screen-md) {
-        width: 100%;
-        padding: 2rem 0;
-        border-top: none;
-      }
-    }
-  
-    &__title {
-      font-size: 1.5rem;
-      font-weight: 400;
-    }
-  
-    &__text-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-end;
-      gap: 2rem;
-      width: 50%;
-      border-top: 1px solid $color-gray;
-      border-bottom: 1px solid $color-gray;
-      margin-right: 10rem;
-      padding: 4rem 0;
-  
-      @include respond($screen-lg) {
-        margin-right: 0;
-      }
-  
-      @include respond($screen-md) {
-        width: 100%;
-        padding: 2rem 0;
-      }
-  
-      @include respond($screen-sm) {
-        border-bottom: none;
-      }
-    }
-  
-    &__text {
-      width: 320px;
-  
-      @include respond($screen-sm) {
-        width: 100%;
-      }
+      width: 100%;
+      padding: 2rem 0;
+      border-top: none;
     }
   }
-  
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 2rem;
+    width: 50%;
+    border-top: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
+    margin-right: 10rem;
+    padding: 4rem 0;
+
+    @include respond($screen-lg) {
+      margin-right: 0;
+    }
+
+    @include respond($screen-md) {
+      width: 100%;
+      padding: 2rem 0;
+    }
+
+    @include respond($screen-sm) {
+      border-bottom: none;
+    }
+  }
+
+  &__text {
+    width: 320px;
+
+    @include respond($screen-sm) {
+      width: 100%;
+    }
+  }
+}
