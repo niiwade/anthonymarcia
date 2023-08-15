@@ -1,96 +1,149 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import styles from "./HorizontalTimeline.module.css"; // Import CSS module
+import styles from "./Order.module.css"; // Import CSS module
 
 const HorizontalTimeline = () => {
   return (
-    <div className="wrapper">
-      <div className="left-container">
-      <h1 className="heading">Order of Service</h1>
+    <div className={styles.container}>
+      <div className="featured-image">
+        <img src="/images/am6.jpeg" alt="" />
+      </div>
 
       <Link href="/" class="separator">
-          {" "}
-          Home
-        </Link>
-        
-      </div>
-      <div className="right-container">
-        {/* <div className="meta">
+        {" "}
+        Back to Home
+      </Link>
+
+      <h1>A&M</h1>
+
+      <ul>
+        <li>
+          <p>• Processional song- This is the day the Lord has made</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Bridal March- Canon in D</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Introit-Ey3 Wode</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Kyrie-Mass of the Sacred Heart</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Gloria-Mass of the Sacred Heart</p>
+        </li>
+        <hr />
+        <li>
+          <p>• 1st Reading-1st Corinthians 12:31-13:8a</p>
+        </li>
+        <hr />
+        <li>
           <p>
-            <span>Lacus -</span>
-            <span>Ultricies posuere</span>
+            • Responsorial Psalm- Psalm 127 ( Blessed are those who fear the
+            Lord and walk in His ways(CH 32))
           </p>
+        </li>
+        <hr />
+        <li>
+          <p> • Gospel Acclamation- 1 John 4:18 and 19</p>
+        </li>
+        <hr />
+        <li>
+          <p> • Gospel Reading-Mark 10:6-9</p>
+        </li>
+        <hr />
+        <li>
+          <p> • Homily</p>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2>MARRIAGE RITES</h2>
+
+      <ul>
+        <li>
+          <p>• Exchange of vows</p>
+        </li>
+        <hr />
+        <li>
+          <p>•Blessing &Exchange of Rings</p>
+        </li>
+        <hr />
+        <li>
+          <p>Lighting of Paschal Candle - CH 320</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Prayer of the faithful</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Collection-Medley of songs</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Preparation of host and chalice</p>
+        </li>
+        <hr />
+        <li>
+          <p>• Sanctus-Mass of the Scared Heart</p>
+        </li>
+        <hr />
+        <li>
+          <p> • The Lords Prayer</p>
+        </li>
+        <hr />
+        <li>
+          <p> Nuptial Blessing</p>
+        </li>
+        <hr />
+        <li>
+          <p> Sign of Peace</p>
+        </li>
+        <hr />
+        <li>
+          <p> Agnus Dei-Mass of the Sacred Heart</p>
+        </li>
+        <hr />
+        <li>
+          <p> Communion-CH95 CH103 CH357</p>
+        </li>
+        <hr />
+        <li>
+          <p> Post Communion Song-Your Grace and Mercy </p>
+        </li>
+        <hr />
+        <li>
           <p>
-            <span>Nunc -</span>
-            <span>Erat varius</span>
+            {" "}
+            Signing of Marriage Certificate/Second Collection-Medely of songs
           </p>
-        </div> */}
+        </li>
+        <hr />
+        <li>
+          <p> Announcements</p>
+        </li>
+        <hr />
+        <li>
+          <p> Benediction/Final Blessing</p>
+        </li>
+        <hr />
+        <li>
+          <p> Alleluia Chorus</p>
+        </li>
+        <hr />
 
-        <div className="featured-image">
-          <img src="/images/am.jpg" alt="" />
-        </div>
-        <div className="content">
-          <p>Friday, September 11th | 7:00 PM Topgolf</p>
-          <p className="indent">Engagement</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM Topgolf</p>
-          <p className="indent">Wedding Procession</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM Topgolf</p>
-          <p className="indent">Words of Welcome</p>
-        </div>
-
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Introduction</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Readings</p>
-        </div>
-
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Officiant Addresses Couple</p>
-        </div>
-
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent"> Exchange Vows</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Ring Exchange</p>
-        </div>
-
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">The Kiss</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Photo List</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Reception</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Cake Cutting</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">First Dance</p>
-        </div>
-        <div className="content">
-          <p>Saturday, August 26th | 7:00 PM </p>
-          <p className="indent">Closing Remarks</p>
-        </div>
-      </div>
+        <hr />
+        <li>
+          <p> Wedding March</p>
+        </li>
+      </ul>
     </div>
   );
 };

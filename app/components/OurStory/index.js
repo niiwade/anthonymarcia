@@ -10,17 +10,17 @@ const Story = () => {
       <header>
         <h1 className={styles["page-title"]}>Our Story</h1>
         <ul className={styles.nav__list}>
-            <li>
-              <Link
-                className={`${styles.nav__link} ${styles["nav__link--active"]}`}
-                href="/"
-              >
-                Home
-              </Link>
-            </li>
-          </ul>
+          <li>
+            <Link
+              className={`${styles.nav__link} ${styles["nav__link--active"]}`}
+              href="/"
+            >
+              Home
+            </Link>
+          </li>
+        </ul>
         <div className="featured-image">
-          <img src="/images/am.jpg" alt="" />
+          <img src="/images/am2.jpeg" alt="" />
         </div>
       </header>
       <main>
@@ -61,7 +61,7 @@ const Story = () => {
           </section>
 
           <section className={styles["content__text-box"]}>
-            <p className={styles["content__text"]}>#The Merge</p>
+            <p className={styles["content__text"]}>#823AM</p>
           </section>
         </article>
       </main>

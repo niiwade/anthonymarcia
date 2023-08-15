@@ -1,8 +1,8 @@
-// components/Slideshow.js
+
 
 "use client";
 
-// components/Slideshow.js
+
 
 import React, { useState, useEffect } from "react";
 import styles from "./Slideshow.module.scss";
