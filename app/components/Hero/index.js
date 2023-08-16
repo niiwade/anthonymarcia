@@ -60,7 +60,7 @@ const Hero = () => {
         <div data-image-overlay className={styles.hero__imageOverlay}></div>
         <Image
           data-image
-          src="/images/am5.jpeg"
+          src="/images/am.jpg"
           layout="fill" // This makes the image take up the whole parent container (hero__image)
           objectFit="cover"
           alt="Blob"
