@@ -31,24 +31,26 @@ const Story = () => {
 
           <section className={styles["content__text-box"]}>
             <p className={styles["content__text"]}>
-              We met during our college years at UNC! We shared a class together
-              and started studying at the library almost every week. We were
-              friends for about a year before making it official.
+              In 2017, we met in GFZA where we were both posted to for our
+              national service. I was selling wrist beads and he bought one from
+              me. That's where we exchanged contacts so I could be updated on
+              what exactly he wanted to order One day, he called me to say hi
+              and we started talking as friends. Talking every evening became a
+              usual thing for us.
             </p>
             <p className={styles["content__text"]}>
-              We met during our college years at UNC! We shared a class together
-              and started studying at the library almost every week. We were
-              friends for about a year before making it official.
+              In 2018, we finished with our national service and parted ways.
+              Even though we were still talking as friends, the distance drew us
+              a bit apart. Fast forward to 2020 , Anthony asked me to be his
+              girlfriend and i agreed because the bond was already tight.
             </p>
             <p className={styles["content__text"]}>
-              We met during our college years at UNC! We shared a class together
-              and started studying at the library almost every week. We were
-              friends for about a year before making it official.
-            </p>
-            <p className={styles["content__text"]}>
-              We have now been together for 5 years, have traveled to 10
-              countries together, and are so excited for this next chapter of
-              our lives.
+              We moved from being good friends to being best friends. We told
+              each other almost everything. Anthony would listen to anything , I
+              have to say and find the perfect response or solution to it.
+              Well... sometimes too logical Lol. We are an opposite of each
+              other but we attract , we complete the statement "Like poles
+              repel, unlike poles attract"
             </p>
           </section>
         </article>
@@ -61,7 +63,7 @@ const Story = () => {
           </section>
 
           <section className={styles["content__text-box"]}>
-            <p className={styles["content__text"]}>#823AM</p>
+            <p className={styles["content__text"]}>#0823AM</p>
           </section>
         </article>
       </main>
