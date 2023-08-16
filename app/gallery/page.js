@@ -8,6 +8,8 @@ const imageUrls = [
   "/images/am3.jpeg",
   "/images/am4.jpeg",
   "/images/am5.jpeg",
+  "/images/am6.jpeg",
+  "/images/am7.jpeg",
   "/images/photo7.jpg",
 ];
 
