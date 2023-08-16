@@ -25,15 +25,13 @@ const Countdown = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  },[]);
 
   return (
     <div className={styles.countdown}>
       {timeRemaining.days} days {timeRemaining.hours} hours{" "}
       {timeRemaining.minutes} minutes {timeRemaining.seconds} seconds
-      
     </div>
-    
   );
 };
 

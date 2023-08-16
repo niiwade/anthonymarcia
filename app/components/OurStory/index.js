@@ -33,7 +33,7 @@ const Story = () => {
             <p className={styles["content__text"]}>
               In 2017, we met in GFZA where we were both posted to for our
               national service. I was selling wrist beads and he bought one from
-              me. That's where we exchanged contacts so I could be updated on
+              me. That is where we exchanged contacts so I could be updated on
               what exactly he wanted to order One day, he called me to say hi
               and we started talking as friends. Talking every evening became a
               usual thing for us.
@@ -49,8 +49,8 @@ const Story = () => {
               each other almost everything. Anthony would listen to anything , I
               have to say and find the perfect response or solution to it.
               Well... sometimes too logical Lol. We are an opposite of each
-              other but we attract , we complete the statement "Like poles
-              repel, unlike poles attract"
+              other but we attract , we complete the statement &ldquo;Like poles
+              repel, unlike poles attract &rdquo;
             </p>
           </section>
         </article>
