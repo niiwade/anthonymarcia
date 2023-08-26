@@ -1,10 +1,10 @@
-// Countdown.js
 import React, { useState, useEffect } from "react";
 import styles from "./Countdown.module.scss";
 
 const Countdown = () => {
   const weddingDate = new Date("2023-08-26"); // Replace with your wedding date in the format "YYYY-MM-DD"
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
+  const [countdownCompleted, setCountdownCompleted] = useState(false);
 
   function getTimeRemaining() {
     const currentTime = new Date();
@@ -21,16 +21,28 @@ const Countdown = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeRemaining(getTimeRemaining());
+      const remainingTime = getTimeRemaining();
+      setTimeRemaining(remainingTime);
+
+      if (remainingTime.days <= 0 && remainingTime.hours <= 0 && remainingTime.minutes <= 0 && remainingTime.seconds <= 0) {
+        setCountdownCompleted(true);
+        clearInterval(interval);
+      }
     }, 1000);
 
     return () => clearInterval(interval);
-  },[]);
+  }, []);
 
   return (
     <div className={styles.countdown}>
-      {timeRemaining.days} days {timeRemaining.hours} hours{" "}
-      {timeRemaining.minutes} minutes {timeRemaining.seconds} seconds
+      {countdownCompleted ? (
+        <p>This is our day!</p>
+      ) : (
+        <p>
+          {timeRemaining.days} days {timeRemaining.hours} hours{" "}
+          {timeRemaining.minutes} minutes {timeRemaining.seconds} seconds
+        </p>
+      )}
     </div>
   );
 };

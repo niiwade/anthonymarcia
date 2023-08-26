@@ -4,6 +4,16 @@ import Link from "next/link";
 import styles from "./Order.module.css"; // Import CSS module
 
 const HorizontalTimeline = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <div className={styles.container}>
       <div className="featured-image">
@@ -144,6 +154,22 @@ const HorizontalTimeline = () => {
           <p> Wedding March</p>
         </li>
       </ul>
+
+      <div>
+        <iframe
+          width="100%"
+          height="600"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Corpus%20Christi%20Catholic%20Church+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+          <a href="https://www.maps.ie/population/">
+            Calculate population in area
+          </a>
+        </iframe>
+      </div>
     </div>
   );
 };
